@@ -115,7 +115,8 @@ def convertir_presion(valor, tipo):
         return valor * 101325
     elif tipo == "Barras a Libras por pulgada cuadrada":
         return valor * 14.5038
-    elif tipo == "Libras por pulgada cuadrada a Barr
+    elif tipo == "Libras por pulgada cuadrada a Barras":
+        return valor / 14.5038
 def convertir_datos(valor, tipo):
     if tipo == "Megabytes a Gigabytes":
         return valor / 1024
